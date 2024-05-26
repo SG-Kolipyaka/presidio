@@ -6,7 +6,7 @@ import axios from "axios";
 
 export const login = (userData) => (dispatch) => {
     dispatch({ type: LOGIN_REQUEST });
-    return axios.post("http://localhost:8080/api/users/login", userData)
+    return axios.post("https://presidio-backend-render.onrender.com/api/users/login", userData)
       .then((res) => {
         console.log(res.data.msg)
         if(res.data.token){
@@ -22,7 +22,7 @@ export const login = (userData) => (dispatch) => {
 
 export const signup = (userData) => (dispatch) => {
     dispatch({ type: SIGNUP_REQUEST });
-    return axios.post("http://localhost:8080/api/users/register", userData)
+    return axios.post("https://presidio-backend-render.onrender.com/api/users/register", userData)
       .then((res) => {
         dispatch({ type: SIGNUP_SUCCESS, payload: res.data.msg });
       })
@@ -41,7 +41,7 @@ export const signup = (userData) => (dispatch) => {
         Authorization: `${token}`,
       },
     };
-    return axios.get(`http://localhost:8080/api/users/singleuser/${id}`,config)
+    return axios.get(`https://presidio-backend-render.onrender.com/api/users/singleuser/${id}`,config)
       .then((res) => {
         console.log(res.data.data)
         dispatch({ type: GET_SELLER_SUCCESS,  payload: [res.data.data] });

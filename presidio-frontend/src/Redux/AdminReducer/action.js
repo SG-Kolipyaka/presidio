@@ -11,7 +11,7 @@ export const addhouse = (userData) => (dispatch) => {
         Authorization:`${token}`
     }
   };
-  return axios.post("http://localhost:8080/api/property/add", userData, config)
+  return axios.post("https://presidio-backend-render.onrender.com/api/property/add", userData, config)
   .then((res) => { 
     dispatch({ type: SELL_POST_SUCCESS, payload: res.data.message }); 
   })
@@ -33,7 +33,7 @@ export const getProperties = (dispatch) => {
           Authorization: `${token}`,
         },
       };
-      return axios.get("http://localhost:8080/api/property/posts", config).then((res)=>{
+      return axios.get("https://presidio-backend-render.onrender.com/api/property/posts", config).then((res)=>{
         dispatch({ type: SELL_GET_SUCCESS, payload: res.data });
       })
       
@@ -55,7 +55,7 @@ export const getProperties = (dispatch) => {
           Authorization: `${token}`,
         },
       };
-       return  axios.patch(`http://localhost:8080/api/property/update/${id}`, propertyData, config).then((res)=>{
+       return  axios.patch(`https://presidio-backend-render.onrender.com/api/property/update/${id}`, propertyData, config).then((res)=>{
         dispatch({ type: SELL_EDIT_SUCCESS, payload: res.data.msg });
        })
       
@@ -75,7 +75,7 @@ export const getProperties = (dispatch) => {
           Authorization: `${token}`,
         },
       };
-      await axios.delete(`http://localhost:8080/api/property/delete/${propertyId}`, config);
+      await axios.delete(`https://presidio-backend-render.onrender.com/api/property/delete/${propertyId}`, config);
       dispatch({ type: SELL_DELETE_SUCCESS, payload: propertyId });
     } catch (error) {
       console.error("Error deleting property:", error.response);
@@ -105,7 +105,7 @@ export const getProperties = (dispatch) => {
       params: filters
     };
     
-    return axios.get("http://localhost:8080/api/property/allposts", config)
+    return axios.get("https://presidio-backend-render.onrender.com/api/property/allposts", config)
       .then((res) => { 
         dispatch({ type: BUY_GET_SUCCESS, payload: res.data }); 
       })
@@ -125,7 +125,7 @@ export const getProperties = (dispatch) => {
           Authorization: `${token}`,
         },
       };
-       return  axios.patch(`http://localhost:8080/api/property/updatelike/${id}`, config).then((res)=>{
+       return  axios.patch(`https://presidio-backend-render.onrender.com/api/property/updatelike/${id}`, config).then((res)=>{
         dispatch({ type: SELL_EDIT_SUCCESS, payload: res.data.msg });
        })
       

@@ -35,7 +35,7 @@ const Edit = () => {
 
 
   const fetchData=(id)=>{
-    return fetch(`http://localhost:8080/api/property/specroute/${id}`).then((res)=>res.json()).then((res)=>{
+    return fetch(`https://presidio-backend-render.onrender.com/api/property/specroute/${id}`).then((res)=>res.json()).then((res)=>{
         console.log(res.data)
         setFormData(res.data)
     }).catch((err)=>{

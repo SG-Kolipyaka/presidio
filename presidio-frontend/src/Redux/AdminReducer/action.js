@@ -44,8 +44,7 @@ export const getProperties = (dispatch) => {
   };
 
 
-  
-  // Action creators for editing property
+
   export const editProperty = (propertyData,id) => async (dispatch) => {
     dispatch({ type: SELL_REQUEST });
     try {

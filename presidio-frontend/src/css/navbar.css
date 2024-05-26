@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #007bff;
+    background-color: darkslateblue;
     height: 60px;
   }
   
@@ -14,7 +14,7 @@
   }
   
   .nav-link:hover {
-    color: #0056b3;
+    color: blueviolet;
   }
   
   .nav-link.active {

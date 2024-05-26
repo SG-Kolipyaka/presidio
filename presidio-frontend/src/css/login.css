@@ -10,7 +10,7 @@
     width: 360px;
     padding: 20px;
     padding-right: 40px;
-    border: 1px solid #ccc;
+    border: 1px solid gray;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -25,14 +25,14 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid gray;
     border-radius: 5px;
   }
   
   button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: lightseagreen;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -40,6 +40,6 @@
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: lightblue;
   }
   

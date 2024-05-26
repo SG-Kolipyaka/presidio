@@ -25,7 +25,7 @@ const Navbar = () => {
           {el.title}
         </NavLink>
       ))}
-      <div style={{marginLeft:"50%",marginTop:"20px"}}>
+      <div style={{marginLeft:"50%",marginTop:"19px"}}>
        <Logout />
       </div>
     </div>

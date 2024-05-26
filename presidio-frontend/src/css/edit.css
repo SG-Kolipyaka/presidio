@@ -1,0 +1,50 @@
+.Edit {
+    max-width: 370px;
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 2px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 20px;
+
+  }
+  
+  .Edit h2 {
+    margin-bottom: 20px;
+  }
+  
+  .Edit form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .Edit input[type="text"],
+  .Edit input[type="number"],
+  .Edit textarea,
+  .Edit select,
+  .Edit input[type="file"] {
+    width: 80%;
+    padding: 10px;
+    padding-right: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .Edit button {
+    width: 100%;
+    padding: 10px;
+    background-color: lightskyblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .Edit button:hover {
+    background-color: darkslateblue;
+  }
+  
+  .Edit .error {
+    color: red;
+    margin-top: -15px;
+  }

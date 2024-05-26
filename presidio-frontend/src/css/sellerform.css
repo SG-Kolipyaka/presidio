@@ -1,0 +1,50 @@
+.sellerform {
+    max-width: 370px;
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 2px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 20px;
+
+  }
+  
+  .sellerform h2 {
+    margin-bottom: 20px;
+  }
+  
+  .sellerform form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .sellerform input[type="text"],
+  .sellerform input[type="number"],
+  .sellerform textarea,
+  .sellerform select,
+  .sellerform input[type="file"] {
+    width: 80%;
+    padding: 10px;
+    padding-right: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .sellerform button {
+    width: 100%;
+    padding: 10px;
+    background-color: lightskyblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sellerform button:hover {
+    background-color: darkslateblue;
+  }
+  
+  .sellerform .error {
+    color: red;
+    margin-top: -15px;
+  }

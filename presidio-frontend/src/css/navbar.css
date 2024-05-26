@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    height: 60px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #0056b3;
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+  }
+  

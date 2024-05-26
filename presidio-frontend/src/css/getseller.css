@@ -1,0 +1,26 @@
+.seller-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .seller-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .seller-card h2 {
+    margin-top: 0;
+  }
+  
+  .seller-card p {
+    margin: 8px 0;
+  }
+  

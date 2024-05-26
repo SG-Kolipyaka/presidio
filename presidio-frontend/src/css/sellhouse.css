@@ -1,0 +1,15 @@
+.houseblock {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .seller-block {
+    flex: 2.5;
+    padding: 5px;
+  }
+  
+  .seller-form {
+    flex: 1.5;
+    padding: 5px;
+  }
+  
